@@ -1,0 +1,14 @@
+
+<h1>Cowboys Index View</h1>
+
+<%= @message %>
+
+<br><br>
+
+<% @cowboys.each do |cowboy| %>
+  <%= cowboy.id %>.
+  <%= cowboy.name %> •
+  <%= cowboy.city %> •
+  <%= cowboy.age %>
+  <br><br>
+<% end %>
