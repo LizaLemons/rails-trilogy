@@ -136,6 +136,24 @@ Examples:
 ---
 
 
+#### Setup your DB
+
+- In `/config/database.yml`, edit the names of your dev, test and prod DBs:
+
+```yml
+# change each from:
+database: db/development.sqlite3
+
+# to:
+database: db/name-of-your-rails-app-development.sqlite3
+```
+
+- Then run `rails db:create`
+
+
+---
+
+
 #### Rake your migration files
 
 After you create models, you can run migrations:
